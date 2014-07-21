@@ -6,6 +6,7 @@
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function (y) {
+                        # Check if matrix has changed
                         if (identical(x,y)) return
                         x <<- y
                         m <<- NULL
